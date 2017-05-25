@@ -15,7 +15,9 @@ int main() {
   page_ranker.SetEpsilon(1e-10);
   page_ranker.SetDamping(0.85);
 
-  page_ranker.Calculate("C:\\Prj\\Py\\PageRankTest\\web-Stanford.txt", 281903, &Callback, false);
+  
+  //page_ranker.Calculate("C:\\Prj\\Py\\PageRankTest\\page-rank.txt", 11, &Callback, false);
+  page_ranker.Calculate("C:\\Prj\\Py\\PageRankTest\\web-Stanford.txt", 281903, &Callback, true);
   page_ranker.Join();
 
   system("pause");
